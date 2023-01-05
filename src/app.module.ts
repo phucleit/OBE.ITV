@@ -35,7 +35,7 @@ import { StaticModule } from './static/static.module';
       rootPath: join(__dirname, '..', 'public'),
     }),
     ConfigModule.forRoot(), 
-    MongooseModule.forRoot("mongodb://admin:123asdCat@45.119.86.103:10000/crm-khachhang-itv",{
+    MongooseModule.forRoot("mongodb://admin:123asdCat@45.119.86.103:10000/oldcrm",{
       connectionFactory: (connection) => {
         connection.plugin(require('mongoose-autopopulate'));
         connection.plugin(require('mongoose-paginate'));
